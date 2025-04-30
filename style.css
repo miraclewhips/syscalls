@@ -1,0 +1,172 @@
+:root {
+	--text-body: #b8b8b8;
+	--text-muted: #555;
+	--text-heading: #fff;
+	--text-arg: #96a6c8;
+	--text-match: #ffdd33;
+	--text-number: #73c936;
+
+	--bg-page: #181818;
+	--bg-heading: #333;
+	--bg-altrow: #141414;
+	--bg-hover: #282828;
+
+	--header-height: 60px;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--bg-page);
+	color: var(--text-body);
+	font-family: 'Hack', monospace;
+	font-size: 14px;
+	margin: 0 auto;
+	max-width: 2000px;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover, a:active {
+	color: var(--text-heading);
+}
+
+.is-hidden {
+	display: none !important;
+}
+
+header {
+	display: flex;
+	padding: 0 10px;
+	gap: 20px;
+	align-items: center;
+	height: var(--header-height);
+	position: sticky;
+	top: 0;
+	background: var(--bg-page);
+}
+
+.title-small {
+	font-size: 12px;
+	color: var(--text-muted);
+	margin-top: 3px;
+}
+
+.search {
+	flex: 1;
+	position: relative;
+}
+
+.search input {
+	display: block;
+	width: 100%;
+	color: inherit;
+	font: inherit;
+	background: #080808;
+	border: 1px solid var(--bg-heading);
+	padding: 10px 12px;
+	padding-right: 30px;
+	transition: border-color 0.2s;
+}
+
+.search input:focus {
+	outline: none;
+	border-color: var(--text-match);
+}
+
+.clear-search {
+	position: absolute;
+	color: var(--text-muted);
+	z-index: 1;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 20px;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.source {
+	font-size: 12px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	border: 1px solid var(--bg-heading);
+	border-top-width: 0;
+}
+
+thead {
+	position: sticky;
+	top: var(--header-height);
+}
+
+th, td {
+	padding: 5px 10px;
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+	color: var(--text-heading);
+	background: var(--bg-heading);
+}
+
+td:not(:first-child) {
+	border-left: 1px solid var(--bg-heading);
+}
+
+tbody tr.is-altrow td {
+	background: var(--bg-altrow);
+}
+
+tbody tr:hover td {
+	background: var(--bg-hover);
+}
+
+.th-manual, .manual {
+	text-align: center;
+}
+
+.manual a {
+	text-decoration: none;
+}
+
+.th-number, .number {
+	text-align: right;
+}
+
+.number {
+	color: var(--text-number);
+}
+
+.name .match {
+	color: var(--text-match);
+	font-weight: bold;
+}
+
+.arg {
+	color: var(--text-arg);
+}
+
+.arg-name {
+	color: var(--text-body);
+}
+
+.not-implemented {
+	color: var(--text-muted);
+	font-style: italic;
+}
+
+.no-rows {
+	padding: 20px;
+	text-align: center;
+	font-style: italic;
+	color: var(--text-muted);
+}
