@@ -3,3 +3,9 @@
 Just a simple, lightweight, web page to see the syscalls and their signatures and easily search them. Data pulled from the Linux GitHub files with a few manual tweaks. See `generate.js` for more details about how it was generated.
 
 [View it online here](https://miraclewhips.dev/syscalls/)
+
+## Using Generator
+
+```console
+$ node ./generate.js
+```

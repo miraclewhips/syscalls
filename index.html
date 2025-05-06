@@ -6,37 +6,37 @@
 		<title>Linux x86_64 Syscalls Table</title>
 		<link rel="shortcut icon" href="favicon.png" type="image/png">
 		<link href="style.css" rel="stylesheet">
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
 	</head>
 	<body>
-		<header>
-			<div class="title">
-				<div class="title-big">Linux x86_64 Syscalls Table</div>
-				<div class="title-small">Updated: 2025-05-01</div>
-			</div>
+		<div class="container">
+			<header>
+				<div class="title">
+					<div class="title-big">Linux x86_64 Syscalls Table</div>
+					<div class="title-small">Updated: 2025-05-07</div>
+				</div>
 
-			<div class="search">
-				<input type="text" id="search" placeholder="Search...">
-				<a href="javascript:clearSearch()" class="clear-search is-hidden">X</a>
-			</div>
+				<div class="search">
+					<input type="text" id="search" placeholder="Search...">
+					<a href="javascript:clearSearch()" class="clear-search is-hidden">X</a>
+				</div>
 
-			<div class="source"><a href="https://github.com/miraclewhips/syscalls">View Source Code on GitHub</a></div>
-		</header>
-		<table>
-			<thead>
-				<tr>
-					<th class="th-manual">Man</th>
-					<th class="th-number">%rax</th>
-					<th>System Call</th>
-					<th>%rdi</th>
-					<th>%rsi</th>
-					<th>%rdx</th>
-					<th>%r10</th>
-					<th>%r8</th>
-					<th>%r9</th>
-				</tr>
-			</thead>
-			<tbody id="rows"><tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/read.2.en.html">&#128464;</a></td><td class="number">0</td><td class="name" data-name="read">read</td><td class="arg">unsigned int <span class="arg-name">fd</span></td><td class="arg">char <span class="arg-name">*buf</span></td><td class="arg">size_t <span class="arg-name">count</span></td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td></tr>
+				<div class="source"><a href="https://github.com/miraclewhips/syscalls">View Source Code on GitHub</a></div>
+			</header>
+			<table>
+				<thead>
+					<tr>
+						<th class="th-manual">Man</th>
+						<th class="th-number">%rax</th>
+						<th>System Call</th>
+						<th>%rdi</th>
+						<th>%rsi</th>
+						<th>%rdx</th>
+						<th>%r10</th>
+						<th>%r8</th>
+						<th>%r9</th>
+					</tr>
+				</thead>
+				<tbody id="rows"><tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/read.2.en.html">&#128464;</a></td><td class="number">0</td><td class="name" data-name="read">read</td><td class="arg">unsigned int <span class="arg-name">fd</span></td><td class="arg">char <span class="arg-name">*buf</span></td><td class="arg">size_t <span class="arg-name">count</span></td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td></tr>
 <tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/write.2.en.html">&#128464;</a></td><td class="number">1</td><td class="name" data-name="write">write</td><td class="arg">unsigned int <span class="arg-name">fd</span></td><td class="arg">const char <span class="arg-name">*buf</span></td><td class="arg">size_t <span class="arg-name">count</span></td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td></tr>
 <tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/open.2.en.html">&#128464;</a></td><td class="number">2</td><td class="name" data-name="open">open</td><td class="arg">const char <span class="arg-name">*filename</span></td><td class="arg">int <span class="arg-name">flags</span></td><td class="arg">umode_t <span class="arg-name">mode</span></td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td></tr>
 <tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/close.2.en.html">&#128464;</a></td><td class="number">3</td><td class="name" data-name="close">close</td><td class="arg">unsigned int <span class="arg-name">fd</span></td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td></tr>
@@ -416,9 +416,10 @@
 <tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/listxattrat.2.en.html">&#128464;</a></td><td class="number">465</td><td class="name" data-name="listxattrat">listxattrat</td><td class="arg">int <span class="arg-name">dfd</span></td><td class="arg">const char <span class="arg-name">*path</span></td><td class="arg">unsigned int <span class="arg-name">at_flags</span></td><td class="arg">char <span class="arg-name">*list</span></td><td class="arg">size_t <span class="arg-name">size</span></td><td class="arg">&nbsp;</td></tr>
 <tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/removexattrat.2.en.html">&#128464;</a></td><td class="number">466</td><td class="name" data-name="removexattrat">removexattrat</td><td class="arg">int <span class="arg-name">dfd</span></td><td class="arg">const char <span class="arg-name">*path</span></td><td class="arg">unsigned int <span class="arg-name">at_flags</span></td><td class="arg">const char <span class="arg-name">*name</span></td><td class="arg">&nbsp;</td><td class="arg">&nbsp;</td></tr>
 <tr><td class="manual"><a href="https://manpages.debian.org/unstable/manpages-dev/open_tree_attr.2.en.html">&#128464;</a></td><td class="number">467</td><td class="name" data-name="open_tree_attr">open_tree_attr</td><td class="arg">int <span class="arg-name">dfd</span></td><td class="arg">const char <span class="arg-name">*path</span></td><td class="arg">unsigned <span class="arg-name">flags</span></td><td class="arg">struct mount_attr <span class="arg-name">*uattr</span></td><td class="arg">size_t <span class="arg-name">usize</span></td><td class="arg">&nbsp;</td></tr></tbody>
-		</table>
+			</table>
 
-		<div class="no-rows is-hidden">No results for search query. <a href="javascript:clearSearch()">Clear search?</a></div>
+			<div class="no-rows is-hidden">No results for search query. <a href="javascript:clearSearch()">Clear search?</a></div>
+		</div>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>

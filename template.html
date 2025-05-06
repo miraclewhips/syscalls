@@ -6,40 +6,41 @@
 		<title>Linux x86_64 Syscalls Table</title>
 		<link rel="shortcut icon" href="favicon.png" type="image/png">
 		<link href="style.css" rel="stylesheet">
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
 	</head>
 	<body>
-		<header>
-			<div class="title">
-				<div class="title-big">Linux x86_64 Syscalls Table</div>
-				<div class="title-small">Updated: {{DATE}}</div>
-			</div>
+		<div class="container">
+			<header>
+				<div class="title">
+					<div class="title-big">Linux x86_64 Syscalls Table</div>
+					<div class="title-small">Updated: {{DATE}}</div>
+				</div>
 
-			<div class="search">
-				<input type="text" id="search" placeholder="Search...">
-				<a href="javascript:clearSearch()" class="clear-search is-hidden">X</a>
-			</div>
+				<div class="search">
+					<input type="text" id="search" placeholder="Search...">
+					<a href="javascript:clearSearch()" class="clear-search is-hidden">X</a>
+				</div>
 
-			<div class="source"><a href="https://github.com/miraclewhips/syscalls">View Source Code on GitHub</a></div>
-		</header>
-		<table>
-			<thead>
-				<tr>
-					<th class="th-manual">Man</th>
-					<th class="th-number">%rax</th>
-					<th>System Call</th>
-					<th>%rdi</th>
-					<th>%rsi</th>
-					<th>%rdx</th>
-					<th>%r10</th>
-					<th>%r8</th>
-					<th>%r9</th>
-				</tr>
-			</thead>
-			<tbody id="rows">{{ROWS}}</tbody>
-		</table>
+				<div class="source"><a href="https://github.com/miraclewhips/syscalls">View Source Code on GitHub</a></div>
+			</header>
+			<table>
+				<thead>
+					<tr>
+						<th class="th-manual">Man</th>
+						<th class="th-number">%rax</th>
+						<th>System Call</th>
+						<th>%rdi</th>
+						<th>%rsi</th>
+						<th>%rdx</th>
+						<th>%r10</th>
+						<th>%r8</th>
+						<th>%r9</th>
+					</tr>
+				</thead>
+				<tbody id="rows">{{ROWS}}</tbody>
+			</table>
 
-		<div class="no-rows is-hidden">No results for search query. <a href="javascript:clearSearch()">Clear search?</a></div>
+			<div class="no-rows is-hidden">No results for search query. <a href="javascript:clearSearch()">Clear search?</a></div>
+		</div>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>
